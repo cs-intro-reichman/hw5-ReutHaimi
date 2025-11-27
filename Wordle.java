@@ -104,11 +104,12 @@ public class Wordle {
 
         int attempt = 0;
         boolean won = false;
+        String guess = "";
 
         while (attempt < MAX_ATTEMPTS && !won) {
 
-            String guess = inp.readString();
             boolean valid = false;
+
 
             // Loop until you read a valid guess
             while (!valid) {
@@ -144,3 +145,4 @@ public class Wordle {
     }
 
 }
+
